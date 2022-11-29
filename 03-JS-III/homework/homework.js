@@ -54,7 +54,6 @@ function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
   return num.toString().length
-
 }
   
   
