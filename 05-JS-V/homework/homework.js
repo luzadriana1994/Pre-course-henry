@@ -15,7 +15,7 @@ function crearUsuario() {
    this.password = opciones.password;
   }
   Usuario.prototype.saludar = function () {
-    return "Hola, mi nombre es" + this.nombre;
+    return "Hola, mi nombre es " + this.nombre;
   }
   return Usuario;
 }
@@ -36,7 +36,7 @@ function agregarStringInvertida() {
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse = function () {
-    var auxString = " "
+    var auxString = ""
     for (let i = this.length -1; i > -1; i--) {
       var element = this[i];
       auxString = auxString + element;
@@ -85,7 +85,7 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
 function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
-  persona.prototype.datos = function () {
+  Persona.prototype.datos = function () {
     return this.nombre + ", " + this.edad + " años";
   }
 }
